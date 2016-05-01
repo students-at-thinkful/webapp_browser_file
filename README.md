@@ -62,19 +62,19 @@ var demo = angular.module("demo", ['ngSanitize'],
 
 ```
 
-#### Angular Controller
+#### Angular JS Controller
 ```
 demo.controller('Ctrl', function($scope, $http) {
 ```
 
-#### Open User Function
+#### Open User Function JS
 ```
   $scope.openUser = 'yes';
   $scope.hideUser = function () { $scope.openUser = 'no'; };
   $scope.showUser = function () { $scope.openUser = 'yes'; };
 ```
 
-#### Slide Menu Function
+#### Slide Menu Function JS
 ```
   $scope.openMenu = 'yes'; $scope.menu_icon = '&#8602;';
   $scope.slideMenu = function () { 
@@ -92,7 +92,7 @@ demo.controller('Ctrl', function($scope, $http) {
 <body>
 ```
 
-#### Open User Gate
+#### Open User Gate HTML
 ```
   <div class="user_gate">
     <a href="{{ login_key }}">
@@ -100,7 +100,7 @@ demo.controller('Ctrl', function($scope, $http) {
     </a>
 ```
 
-#### Check User Name 
+#### Check User Name HTML w/ Server Variables
 ```
     {% if user_name != 'No User' %}
     <br /> {{ user_name }}
@@ -109,7 +109,7 @@ demo.controller('Ctrl', function($scope, $http) {
     </a></p>
 ```
 
-#### Check Admin Status
+#### Check Admin Status HTML w/ Server Variables
 ```
     {% if admin == 'true' %}<p class="color_a">
       Admin User &nbsp; <span class="picto">&#9813;</span>
