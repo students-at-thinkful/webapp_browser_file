@@ -119,4 +119,34 @@ demo.controller('Ctrl', function($scope, $http) {
   </div> <!-- . user_gate - -->
 ```
 
+#### Logo Wrap HTML
+```
+  <a href="/"><div class="logo_wrap"><span class="picto">&#10063;</span><br />{{ Site }}</div></a>
+```
 
+#### Menu Bar HTML
+```
+  <aside class="menu_bar openMenu-[!openMenu!]">
+```
+
+#### Main Nav Wrap HTML
+```
+    <nav class="main_nav"><ul>{{ main_nav|safe }}</ul></nav>
+
+  </aside> <!-- . menu_bar - -->
+```
+
+#### Menu Nav Buttons HTML
+```
+<div class="nav_graphic" ng-click="slideMenu()" ng-bind-html="menu_icon"></div>
+```
+
+#### Page Body Wrap HTML
+```
+  <main class="page_wrap">{{ page_html|safe }}</main>
+```
+
+#### Finish Page
+```
+</body></html>
+```
