@@ -92,4 +92,31 @@ demo.controller('Ctrl', function($scope, $http) {
 <body>
 ```
 
+#### Open User Gate
+```
+  <div class="user_gate">
+    <a href="{{ login_key }}">
+     {{ gate }} &nbsp; <span class="picto">&#9814;</span>
+    </a>
+```
+
+#### Check User Name 
+```
+    {% if user_name != 'No User' %}
+    <br /> {{ user_name }}
+    <p><a href="../../user">
+      View Profile &nbsp; <span class="picto">&#9817;</span>
+    </a></p>
+```
+
+#### Check Admin Status
+```
+    {% if admin == 'true' %}<p class="color_a">
+      Admin User &nbsp; <span class="picto">&#9813;</span>
+    </p>{% endif %}
+    {% endif %}
+
+  </div> <!-- . user_gate - -->
+```
+
 
